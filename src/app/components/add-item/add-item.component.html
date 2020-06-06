@@ -1,0 +1,18 @@
+<div class="card" >
+    <div class="card-content">Signup - Bringing Something ?</div>
+    <form (ngSubmit)="onSubmit()" class="col s6" name="signup">
+        <div class="row">
+            <div class="input-field col s6">
+                <input type="text" placeholder="Add Your Name" [(ngModel)]="item.person" name="person">
+                <label>Name:</label>
+            </div>
+            <div class="input-field col s6">
+                <input type="text" placeholder="Add What You Are Bringing" [(ngModel)]="item.item" name="item">
+                <label>Item:</label>
+            </div>
+            <div>
+            <input type="submit" value="submit" class="btn btn-primary">
+        </div>
+        </div>
+    </form>
+    </div>

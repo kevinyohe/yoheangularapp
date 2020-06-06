@@ -1,0 +1,10 @@
+<div *ngIf="items?.length > 0;else noItems">
+<ul class="collection" *ngFor="let item of items">
+<li>{{item.person}} is signed up - {{item.item}}</li>
+</ul>
+</div>
+
+<ng-template #noItems>
+    <hr>
+    <h5>There are no signups yet</h5>
+</ng-template>

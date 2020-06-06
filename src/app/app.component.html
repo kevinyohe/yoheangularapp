@@ -20,9 +20,9 @@
 
 </style>
 <body>
-
+<app-navbar></app-navbar>
 <h1> BBQ IN x DAYS! </h1>
-<div>Summer BBQ
+<div class="container">Summer BBQ
     We will have:
     <ul>
         <li>burgers</li>
@@ -34,7 +34,7 @@
         <li>sodas</li>
     </ul>
 </div>
-<div class="card" style="width: 33%;">
+<div class="container">
     <h4 class="card-title">Address</h4>
     <p class="card-text">
         529 Whispering Lakes Blvd.</p>
@@ -43,36 +43,8 @@
     <a href="https://www.google.com/maps/place/529+Whispering+Lakes+Blvd,+Tarpon+Springs,+FL+34688/@28.1396455,-82.664927,21z/data=!4m22!1m16!4m15!1m6!1m2!1s0x88c2937218a1f74f:0x4947dbdd59e0e945!2s529+Whispering+Lakes+Blvd,+Tarpon+Springs,+FL+34688-9022,+USA!2m2!1d-82.6649266!2d28.1396765!1m6!1m2!1s0x88c2937218a1f74f:0x4947dbdd59e0e945!2s529+Whispering+Lakes+Blvd,+Tarpon+Springs,+FL+34688-9022,+USA!2m2!1d-82.6649266!2d28.1396765!3e0!3m4!1s0x88c2937218a1f74f:0x4947dbdd59e0e945!8m2!3d28.1396765!4d-82.6649266">Google Maps</a>
 </div>
 
-<!--The div element for the map -->
-<div id="map"></div>
-<script>
-    // Initialize and add the map
-    function initMap() {
-        // The location of Uluru
-        var home = {lat: 28.1396455,lng: -82.664927};
 
-        // The map, centered at Uluru
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 14, center: home});
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: home, map: map});
-    }
-</script>
-<style>
-    #map {
-        width: 33%;
-        height: 400px;
-        background-color: grey;
-    }
-</style>
-
-
-
-<div class="signup">
-    Sign up to bring something:
-    <form action="submit" method="post">
-        <input placeholder="Name">
-        <input placeholder="Chips">
-        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-    </form>
-</div>
+<div class="container">
+<app-items></app-items>
+<app-add-item></app-add-item>
+</div>  
